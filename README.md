@@ -44,5 +44,5 @@ Just find the latest at <https://github.com/mxcl/homebrew/wiki/installation>
 Add to your .bash_profile:
 
     if [ -f `brew --prefix`/etc/bash_completion ]; then
-       . `brew --prefix`/etc/bash_completion
+      . `brew --prefix`/etc/bash_completion
     fi
