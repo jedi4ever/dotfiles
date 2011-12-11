@@ -25,7 +25,24 @@ Tip found via <http://kevin.colyar.net/2011/01/pretty-vim-color-schemes-in-iterm
 ## Plugins
 
 # Finder
+## Solid dark background color
 Tip found at <http://www.slashdotdash.net/2006/12/19/mac-os-x-desktop-black-background-wallpaper/>
 
 - Standard finder desktop , has no black/dark solid color background
 - Copy a file in `/Library/Desktop Pictures/Solid Colors/` and change it's color
+
+# Brew
+## Installation
+Just find the latest at <https://github.com/mxcl/homebrew/wiki/installation>
+<http://mxcl.github.com/homebrew/>
+
+# Bash
+# Activate autocompletion in bash
+
+        $ brew install bash-completion
+
+Add to your .bash_profile:
+
+        if [ -f `brew --prefix`/etc/bash_completion ]; then
+          . `brew --prefix`/etc/bash_completion
+        fi
