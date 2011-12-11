@@ -13,13 +13,13 @@ Tip found via <http://iamnearlythere.com/installing-vim-python-ruby-support-home
 ## 256 color terminal support
 Tip found via <http://kevin.colyar.net/2011/01/pretty-vim-color-schemes-in-iterm2/>
 
-- The standard Macosx Terminal does not support 256 color schemes
-- You can make this work by installing [Iterm2](http://www.iterm2.com/#/section/home)
-- This also has awesome support like:
--- Alt-Enter :full screen
--- Alt-(Arrows) : navigate tabs
--- Alt-Command-E : expose
-- Change in preferences (xterm to xterm-256)
-- Install dessert color scheme: <https://github.com/mbadolato/iTerm2-Color-Schemes>
+* The standard Macosx Terminal does not support 256 color schemes
+* You can make this work by installing [Iterm2](http://www.iterm2.com/#/section/home)
+* This also has awesome support like:
+** Alt-Enter :full screen
+** Alt-(Arrows) : navigate tabs
+** Alt-Command-E : expose
+* Change in preferences (xterm to xterm-256)
+* Install dessert color scheme: <https://github.com/mbadolato/iTerm2-Color-Schemes>
 
 ## Plugins
