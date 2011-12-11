@@ -49,6 +49,13 @@ Add to your .bash_profile:
       . `brew --prefix`/etc/bash_completion
     fi
 
+## Add ls colors
+Tip found at <http://www.napolitopia.com/2010/03/lscolors-in-osx-snow-leopard-for-dummies/>
+
+    export LS_OPTIONS='--color=auto'
+    export CLICOLOR='Yes'
+    export LSCOLORS=''
+
 # Git
 ## Use the files
     ln -s `pwd`/dot-gitconfig $HOME/.gitconfig
