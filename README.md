@@ -58,6 +58,10 @@ Tip found at <http://www.napolitopia.com/2010/03/lscolors-in-osx-snow-leopard-fo
 
 ## Display rvm , git in prompt
 Tip found at - <http://collectiveidea.com/blog/archives/2011/08/02/command-line-feedback-from-rvm-and-git/>
+
+you require rvm and git-completion in bash to work
+"__git_ps1" comes from .git-completion.bash (download from git repo) which you have to source first in your profile before this.
+
 # Git
 ## Use the files
     ln -s `pwd`/dot-gitconfig $HOME/.gitconfig
