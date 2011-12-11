@@ -28,4 +28,4 @@ Tip found via <http://kevin.colyar.net/2011/01/pretty-vim-color-schemes-in-iterm
 Tip found at <http://www.slashdotdash.net/2006/12/19/mac-os-x-desktop-black-background-wallpaper/>
 
 - Standard finder desktop , has no black/dark solid color background
-- Copy a file in /Library/Desktop Pictures/Solid Colors/ and change it's color
+- Copy a file in `/Library/Desktop Pictures/Solid Colors/` and change it's color
