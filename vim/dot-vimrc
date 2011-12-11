@@ -1,0 +1,120 @@
+"https://github.com/tpope/vim-pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
+syntax on " Enable syntax highlighting
+filetype on " Enable filetype detection
+filetype indent on " Enable filetype-specific indenting
+filetype plugin on " Enable filetype-specific plugins
+
+set ic " Case insensitive search
+set hls " Highlight search
+set showmatch " Show matching brackets
+set expandtab
+set autoindent
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+autocmd filetype html,xml set listchars-=tab:>.
+
+"http://nvie.com/posts/how-i-boosted-my-vim/
+
+"F5 is shortcut for removing whitespace
+"http://vim.wikia.com/wiki/Remove_unwanted_spaces
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+"
+"Show line numbers
+set number
+
+""http://hasno.info/vim-7-ruby-omni-completion
+""ctrl-x ctrl-o
+""autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+""autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+""for fastri
+""autocmd FileType ruby,eruby let g:rtc_completion_use_fri=1
+"
+""ruby
+
+"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+"autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+"autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+"autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+"
+"improve autocomplete menu color
+highlight Pmenu ctermbg=238 gui=bold
+
+let mapleader=","
+
+set title                " change the terminal's title
+
+"set noerrorbells         " don't beep
+set visualbell           " don't beep
+set shell=/bin/bash
+
+"enable views: when you reopen it's at the same position
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
+
+"hardcopy
+"http://vim.runpaint.org/basics/printing/
+set printoptions=paper:A4,syntax:y,wrap:y,duplex:on,number:y
+
+"folding
+set foldmethod=syntax
+
+"set paste
+
+"set Mccloudfile to ruby syntax
+au BufRead,BufNewFile Mccloudfile set filetype=ruby
+
+"Solarized color scheme
+set background=dark
+"set terminal colors to 256
+"note you have to use iterm2 on mac with xterm-256
+"activated
+set t_Co=256
+colorscheme desert-warm-256
+
+
+" http://www.codeography.com/2010/06/25/rvm-and-vim-tastes-like-awesome.html
+
+"Status line of awesome
+hi User1 ctermbg=237 ctermfg=248
+hi User2 ctermbg=red   ctermfg=blue
+hi User3 ctermbg=blue  ctermfg=green
+set laststatus=2
+set statusline=         " clear statusline for vim reload
+set statusline+=%1*     " set color to User1
+set statusline+=%f     " filename/path
+"set statusline+=\ %#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%1*     " set color to User1
+set statusline+=%y    " filetype
+set statusline+=\[%{FileSize()}]
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] " file format
+set statusline+=%h      " help file flag
+set statusline+=%m      " modified flag
+set statusline+=%r      " read only flag
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''} " Git Branch (if fugitive loaded)
+set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''} " Rvm info (if rvm-vim is loaded)
+set statusline+=[Modified:%{strftime(\"\%c\",getftime(expand(\"\%\%\")))}]  " Last Modified
+set statusline+=%=      " left/right seperator
+set statusline+=[%c,    " cursor column
+set statusline+=%l/%L   " cursor line/total lines
+set statusline+=\ %P]   " percent through file"
+function! FileSize()
+  let bytes = getfsize(expand("%:p"))
+  if bytes <= 0
+    return ""
+  endif
+  if bytes < 1024
+    return bytes
+  else
+    return (bytes / 1024) . "K"
+  endif
+endfunction
+
