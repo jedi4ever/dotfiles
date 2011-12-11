@@ -1,0 +1,11 @@
+# This is needed for rvm to load it's required files
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+# Set the default editor in a shell
+export EDITOR=vi
+
+# Activate autocompletion in bash
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi

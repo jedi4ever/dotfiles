@@ -37,7 +37,9 @@ Just find the latest at <https://github.com/mxcl/homebrew/wiki/installation>
 <http://mxcl.github.com/homebrew/>
 
 # Bash
-# Activate autocompletion in bash
+## install profile
+    ln -s `pwd`/dot-bash_profile $HOME/.bash_profile
+## Activate autocompletion in bash
 
     $ brew install bash-completion
 
@@ -46,3 +48,11 @@ Add to your .bash_profile:
     if [ -f `brew --prefix`/etc/bash_completion ]; then
       . `brew --prefix`/etc/bash_completion
     fi
+
+# Git
+## Use the files
+    ln -s `pwd`/dot-gitconfig $HOME/.gitconfig
+## Enable color in git in terminal
+Tip found at <http://stackoverflow.com/questions/1156069/how-to-configure-term-on-mac-os-x-with-color>
+    $ git config --global color.ui true
+

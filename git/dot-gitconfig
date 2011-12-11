@@ -1,0 +1,9 @@
+[user]
+  name = Patrick Debois
+  email = Patrick.Debois@jedi.be
+[core]
+  excludesfile = /Users/patrick/.gitignore
+[alias]
+  ll = log --all --graph --oneline --date-order --format='%C(yellow)%h%Creset %C(green)(%cr)%Creset %C(red)%d%Creset %an - %s'
+[color]
+  ui = true
