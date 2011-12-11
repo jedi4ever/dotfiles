@@ -74,3 +74,7 @@ Tip found at <http://stackoverflow.com/questions/1156069/how-to-configure-term-o
 in alias section of .gitconfig
 
     ll = log --all --graph --oneline --date-order --format='%C(yellow)%h%Creset %C(green)(%cr)%Creset %C(red)%d%Creset %an - %    s'
+
+# Tmux
+  remap ctrl-b -> ctrl-a
+  full screen only seem to work when there is already a tmux session running detached
