@@ -56,6 +56,8 @@ Tip found at <http://www.napolitopia.com/2010/03/lscolors-in-osx-snow-leopard-fo
     export CLICOLOR='Yes'
     export LSCOLORS=''
 
+## Display rvm , git in prompt
+Tip found at - <http://collectiveidea.com/blog/archives/2011/08/02/command-line-feedback-from-rvm-and-git/>
 # Git
 ## Use the files
     ln -s `pwd`/dot-gitconfig $HOME/.gitconfig
