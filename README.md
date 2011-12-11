@@ -54,5 +54,6 @@ Add to your .bash_profile:
     ln -s `pwd`/dot-gitconfig $HOME/.gitconfig
 ## Enable color in git in terminal
 Tip found at <http://stackoverflow.com/questions/1156069/how-to-configure-term-on-mac-os-x-with-color>
+
     $ git config --global color.ui true
 
