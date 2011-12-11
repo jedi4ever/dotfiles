@@ -64,3 +64,7 @@ Tip found at <http://stackoverflow.com/questions/1156069/how-to-configure-term-o
 
     $ git config --global color.ui true
 
+## Pretty log listing
+in alias section of .gitconfig
+
+    ll = log --all --graph --oneline --date-order --format='%C(yellow)%h%Creset %C(green)(%cr)%Creset %C(red)%d%Creset %an - %    s'
